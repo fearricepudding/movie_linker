@@ -83,7 +83,7 @@ int main(int argc, char** argv)
 		};
 
 		std::cout << "[*] Not linked, creating link..." << std::endl;
-		boost::filesystem::create_symlink(moviePath, linkPath);
+		boost::filesystem::create_hard_link(moviePath, linkPath);
 	};
 
 	return 0;
